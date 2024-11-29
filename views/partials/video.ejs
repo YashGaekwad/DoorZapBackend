@@ -1,0 +1,21 @@
+<div class="video-container" style="display: none;"> <!-- Initially hidden -->
+  <!-- Remote Video (Full Screen) -->
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <!-- Local Video (Picture-in-Picture) -->
+  <div class="local-video-container">
+    <video id="localVideo" autoplay playsinline muted></video>
+  </div>
+
+  <!-- Floating Call Controls -->
+  <div class="call-controls">
+    <button id="endCallButton" class="call-button end-call">
+      <img src="/visitor-interface/end-call-icon.png" alt="End Call">
+    </button>
+  </div>
+
+  <div class="overlay" id="statusOverlay">
+    <p id="statusText">Connecting...</p>
+  </div>
+
+</div>

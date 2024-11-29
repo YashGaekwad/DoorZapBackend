@@ -1,0 +1,14 @@
+<div id="form-container">
+    <h1>DoorZap</h1>
+    <h2>Welcome You</h2>
+    <p>Please enter your details to proceed.</p>
+    <form id="visitorForm">
+      <input type="hidden" id="visitorId" value="<%= visitorId %>">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+      <button type="submit">Knock Knock</button>
+    </form>
+  </div>
+  
