@@ -19,6 +19,9 @@ const io = new Server(server);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/public", express.static(path.join(__dirname, "public")));
+
+
 
 // Set EJS as the templating engine
 app.set("view engine", "ejs");
